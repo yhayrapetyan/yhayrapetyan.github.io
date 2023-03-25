@@ -1,0 +1,61 @@
+body {
+    background-image: url('/images/background_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*.button-container {*/
+
+/*    display: inline;*/
+/*    justify-content: right;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.button-container button {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    display: inline-block;*/
+/*    margin: 0 10px;*/
+/*    padding: 10px 20px;*/
+/*}*/
+/*.button-container {*/
+/*    display: flex;*/
+/*    justify-content: flex-end;*/
+/*    align-items: center;*/
+/*    position: relative;*/
+/*}*/
+
+/*.button-container button {*/
+/*    margin-left: 10px;*/
+/*    padding: 10px 20px;*/
+/*}*/
+
+/*.button-container a {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    right: 100px;*/
+/*}*/
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.button-container button {
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+.button-container .login-btn {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button-container .signup-btn {
+    position: relative;
+}
+

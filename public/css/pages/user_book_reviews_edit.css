@@ -1,0 +1,46 @@
+body {
+    background-color:#e8e88a  ;
+}
+article.book-review {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+    height: 80%;
+    width: 80%;
+    font-size: 20px;
+    padding: 24px;
+    background: white ;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(53,72,91,.07), 0 2px 3px rgba(0,0,0,.01), 0 4px 4px rgba(0,0,0,.02), 0 10px 8px rgba(0,0,0,.03), 0 15px 15px rgba(0,0,0,.03), 0 30px 30px rgba(0,0,0,.04), 0 70px 65px rgba(0,0,0,.05);
+}
+
+.text-container {
+    height: 100%;
+}
+
+.text-container label{
+    vertical-align: top;
+}
+.text-container textarea {
+    overflow: revert ;
+    width: 75%;
+    height: 70%;
+}
+.text-container button{
+
+    margin-bottom: 50px;
+    font-size: 15px;
+    background-color:#e8e88a ;
+    border-color: white;
+    border-radius: 7px;
+    padding: 20px  ;
+    float: right;
+}
+.text-container input {
+    vertical-align: top;
+}
