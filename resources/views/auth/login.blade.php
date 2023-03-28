@@ -47,7 +47,7 @@
                         <form action={{route('login')}} class="signing-form" method="post">
                             @csrf
                             <div class="form-group mb-3">
-                                <label class="label" for="name">Username</label>
+                                <label class="label" for="name">Username Seroj</label>
                                 <input id="name" type="text" name="username" class="form-control" placeholder="Username"
                                        required>
                             </div>
