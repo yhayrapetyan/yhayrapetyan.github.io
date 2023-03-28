@@ -37,9 +37,10 @@
                             </div>
                             <div class="w-100">
                                 <p class="social-media d-flex justify-content-end">
-                                    <a href="#"
+                                    <a href="{{route('facebook.login')}}"
                                        class="social-icon d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-facebook"></span></a>
+                                            class="fa fa-facebook"></span>
+                                    </a>
                                 </p>
                             </div>
                         </div>
