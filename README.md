@@ -39,11 +39,11 @@ Latest commit c765cdb 6 hours ago
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('css/pages/user_book_reviews_index.css')}}">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Books</title>
+    <title>hello</title>
 </head>
 <body>
 <article class="book-review">
-    <h1> Hello Davit</h1>
+    <h1> Hello /h1>
 </article>
 </body>
 </html>
