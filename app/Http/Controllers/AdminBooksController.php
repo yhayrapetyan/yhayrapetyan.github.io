@@ -40,7 +40,7 @@ class AdminBooksController extends Controller
             'title' => $validate['title'],
             'author' => $validate['author'],
             'description' => $validate['description'],
-            'cover_path' => str_replace('public/', '/storage/', $path),
+            'cover_path' =>  str_replace('public/', '/storage/', $path),
             'genre' => $validate['genre'],
         ]);
         $book->save();
@@ -48,11 +48,6 @@ class AdminBooksController extends Controller
         return redirect()->back()->withSuccess(["{$validate['title' ]} created successfully"]);
     }
 
-    public function show($id)
-    {
-        //        $book = Book::find($id);
-        //        return view('admin_panel/book_show',['book'=>$book]);
-    }
 
     public function edit($id)
     {

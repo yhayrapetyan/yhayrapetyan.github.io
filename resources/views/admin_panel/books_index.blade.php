@@ -18,16 +18,16 @@
         </a>
     </div>
 
-    <script>
-        function updateAction() {
-            let form = document.getElementById("my-form");
-            let select = document.getElementById("tables");
-            let selectedValue = select.options[select.selectedIndex].value;
-            console.log("Selected value: " + selectedValue);
-            form.action = selectedValue;
-            console.log("Form action: " + form.action);
-        }
-    </script>
+{{--    <script>--}}
+{{--        function updateAction() {--}}
+{{--            let form = document.getElementById("my-form");--}}
+{{--            let select = document.getElementById("tables");--}}
+{{--            let selectedValue = select.options[select.selectedIndex].value;--}}
+{{--            console.log("Selected value: " + selectedValue);--}}
+{{--            form.action = selectedValue;--}}
+{{--            console.log("Form action: " + form.action);--}}
+{{--        }--}}
+{{--    </script>--}}
 @endsection
 
 @section('table_name')
@@ -53,7 +53,7 @@
             <td>{{$book['title']}}</td>
             <td>{{$book['author']}}</td>
             <td style="white-space: pre-line">{{$book['description']}}</td>
-            <td><img alt="cover_img" src={{$book['cover_path']}} width="50" height="60"></td>
+            <td><img alt="cover_img" src={{asset($book['cover_path'])}} width="50" height="60"></td>
             <td>{{$book['genre']}}</td>
             <td>
                 <form id="deleteBookForm" action={{route('admin.books.destroy',$book['id'] )}}} method='post'>

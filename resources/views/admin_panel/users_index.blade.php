@@ -46,7 +46,7 @@ Users
                     @method('DELETE')
                     @csrf
                     <div class="form-group">
-                        <button onclick="confirmDelete('#deleteBookForm')" class="button-77" role="button" style="background-color: #99b19c">Delete User</button>
+                        <button onclick="confirmDelete('#deleteUserForm')" class="button-77" role="button" style="background-color: #99b19c">Delete User</button>
                     </div>
                 </form>
 

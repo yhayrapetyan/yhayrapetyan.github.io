@@ -31,7 +31,7 @@
     <article class="book-review">
         <a href="{{route('books.show',$book['id'])}}" style="text-decoration: none; color:black"  >
             <div class="img-container">
-                <img src="{{$book['cover_path']}}" alt="" >
+                <img src="{{asset($book['cover_path'])}}" alt="Cover img" >
             </div>
             <div class="text-container">
                 <h2 class="u-custom-font u-font-ubuntu u-text u-block-f416-36">

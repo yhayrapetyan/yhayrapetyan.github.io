@@ -12,13 +12,13 @@
         <button type="submit">Submit</button>
     </form>
 
-    <script>
-        function updateAction() {
-            let form = document.getElementById("my-form");
-            let select = document.getElementById("tables");
-            form.action = select.options[select.selectedIndex].value;
-        }
-    </script>
+{{--    <script>--}}
+{{--        function updateAction() {--}}
+{{--            let form = document.getElementById("my-form");--}}
+{{--            let select = document.getElementById("tables");--}}
+{{--            form.action = select.options[select.selectedIndex].value;--}}
+{{--        }--}}
+{{--    </script>--}}
 
 @endsection
 @section('table_name')
@@ -48,7 +48,7 @@
                     @csrf
                     <div class="form-group">
 
-                        <button class="button-77" role="button" style="background-color: #99b19c">Delete Review
+                        <button onclick="confirmDelete('#deleteBookReviewForm')" class="button-77" role="button" style="background-color: #99b19c">Delete Review
                         </button>
 
                     </div>

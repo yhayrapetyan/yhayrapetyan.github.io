@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PayPalController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AuthController;
@@ -10,7 +11,6 @@ use App\Http\Controllers\BooksController;
 Use App\Http\Controllers\PasswordRecoveryController;
 use App\Http\Controllers\BookReviewsController;
 use App\Http\Controllers\UsersController;
-use Laravel\Socialite\Facades\Socialite;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 /*
@@ -29,6 +29,10 @@ Route::get('/logout', function () {
      return redirect()->route('login');
 })->name('logout');
 
+Route::view('/test','test');
+Route::get('payment', 'PayPalController@payment')->name('payment');
+Route::get('cancel', 'PayPalController@cancel')->name('payment.cancel');
+Route::get('payment/success', 'PayPalController@success')->name('payment.success');
 
 Route::middleware('guest')->group( function(){
 
@@ -42,11 +46,6 @@ Route::middleware('guest')->group( function(){
     Route::view('/register', 'auth/registration')->name('register');
     Route::get('verifyEmail/{id}/{token}',[AuthController::class, 'verifyEmail'])->name('verify.email');
 
-
-    Route::get('auth/facebook', function (){
-        return Socialite::driver('facebook')->redirect();
-    })->name('facebook.login');
-    Route::get('auth/facebook/callback', [AuthController::class,'handleFacebookCallback'])->name('facebook.callback');
 });
 
 Route::view('/password_recovery', 'auth/password_recovery')->name('password_recovery');
@@ -65,6 +64,7 @@ Route::middleware('auth')->group(function() {
     Route::get('/users', [UsersController::class, 'show'])->name('users.show');
     Route::get('/users/{id}/edit', [UsersController::class, 'edit'])->name('users.edit');
     Route::put('/users/{id}', [UsersController::class, 'update'])->name('users.update');
+
 });
 
 Route::prefix('admin')->middleware('admin')->name('admin.')->group(function(){

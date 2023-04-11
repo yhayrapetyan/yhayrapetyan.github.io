@@ -35,19 +35,11 @@
                             <div class="w-100">
                                 <h3 class="mb-4">Sign In</h3>
                             </div>
-                            <div class="w-100">
-                                <p class="social-media d-flex justify-content-end">
-                                    <a href="{{route('facebook.login')}}"
-                                       class="social-icon d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-facebook"></span>
-                                    </a>
-                                </p>
-                            </div>
                         </div>
                         <form action={{route('login')}} class="signing-form" method="post">
                             @csrf
                             <div class="form-group mb-3">
-                                <label class="label" for="name">Username Seroj</label>
+                                <label class="label" for="name">Username</label>
                                 <input id="name" type="text" name="username" class="form-control" placeholder="Username"
                                        required>
                             </div>

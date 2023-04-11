@@ -25,6 +25,7 @@
 <a href="{{asset(route('book_reviews.create',['book_id' =>$book['id']]))}}">
     <button style="margin-left: 400px; background-color:#99b19c;padding: 10px 20px">Leave Review</button>
 </a>
+
 <div>
     <p style="font-size: 50px; margin-left: 50px;">Description</p>
     <p style="white-space: pre-line; margin-left: 50px;">{{$book['description']}} </p>

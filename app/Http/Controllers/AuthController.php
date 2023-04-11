@@ -33,7 +33,7 @@ class AuthController extends Controller
 
         ]);
 
-//        Mail::to($user->email)->send(new VerifyEmail($user));
+        Mail::to($user->email)->send(new VerifyEmail($user));
 
         return view('auth/waiting_email_verification',['user'=>$user]);
     }
@@ -72,12 +72,5 @@ class AuthController extends Controller
 
         return redirect()->back()->withErrors('not correct login or password');
     }
-
-    public function handleFacebookCallback (Request $request)
-    {
-        dd($request);
-    }
-
-
 
 }

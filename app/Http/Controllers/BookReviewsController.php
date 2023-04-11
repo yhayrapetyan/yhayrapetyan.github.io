@@ -60,7 +60,6 @@ class BookReviewsController extends Controller
             'user_id' => Auth::id(),
         ]);
 
-//            dd($book_review);
 
         return redirect()->route('books.show', $book_id)->withSuccess(['your review created successfully']);
     }
@@ -97,6 +96,6 @@ class BookReviewsController extends Controller
     {
 
         BookReview::destroy($id);
-        return redirect()->route('user.index')->withSuccess(['your review deleted successfully!']);
+        return redirect()->route('users.show')->withSuccess(['your review deleted successfully!']);
     }
 }

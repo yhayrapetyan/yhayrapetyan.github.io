@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/pages/user_book_reviews_edit.css')}}">
     <link rel="stylesheet" href="{{asset('css/components/alerts.css')}}">
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>MY Reviews</title>
 </head>

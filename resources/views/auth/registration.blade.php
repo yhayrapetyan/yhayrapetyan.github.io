@@ -33,13 +33,6 @@
                             <div class="w-100">
                                 <h3 class="mb-4">Sign Up</h3>
                             </div>
-                            <div class="w-100">
-                                <p class="social-media d-flex justify-content-end">
-                                    <a href="{{route('facebook.login')}}"
-                                       class="social-icon d-flex align-items-center justify-content-center"><span
-                                            class="fa fa-facebook"></span></a>
-                                </p>
-                            </div>
                         </div>
                         <form action={{route('registering')}} class="signing-form" method="post">
                             @csrf
